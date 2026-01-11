@@ -65,7 +65,7 @@ void mul(int a1[10][10],int a2[10][10],int s1)
 			a3[i][j]=sum;		
 		}		
 	}
-	printf("ultipicationof matrix\n");
+	printf("Multipicationof matrix\n");
 		for(i=0;i<s1;i++)
 	{
 		for(j=0;j<s1;j++)
@@ -78,7 +78,7 @@ void mul(int a1[10][10],int a2[10][10],int s1)
 
 int main()
 {
-	int a1[10][10],a2[10][10],s1,ch,i,j;
+	int a1[10][10],a2[10][10],s1,re=0,ch,i,j;
 	printf("Enter the size of array1 and array2");
 	scanf("%d",&s1);
 	printf("enter arr1 elements");
@@ -97,13 +97,8 @@ int main()
 			scanf("%d",&a2[i][j]);
 		}
 	}
-	for(i=0;i<s1;i++)
+		do
 	{
-		for(j=0;j<s1;j++)
-		{
-			printf("%d\t",a2[i][j]);
-		}
-	}
 	printf("\nSelect one option to perform matrix operation\n1.Addtion\n2.Subtraction\n3.Multiplication\n4.Transpose");
 	scanf("%d",&ch);
 	switch(ch)
@@ -122,5 +117,11 @@ int main()
 			transpose(a1,s1);
 			break;
 	}
+		printf("Do you want to repeat press1");
+		scanf("%d",&re);
+	
+	}
+	
+	while(re==1);
 	return 0;
 }

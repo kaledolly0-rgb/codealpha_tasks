@@ -40,7 +40,7 @@ int main()
 			printf("Default choice");
 			break;
 	}
-	printf("\nDo you want to perform operation again");
+	printf("\nDo you want to perform operation again press 1");
 	scanf("%d",&re);
 
 	}
